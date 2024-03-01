@@ -18,8 +18,9 @@
 /* Define --------------------------------------------------------------------*/
 /* Typedef -------------------------------------------------------------------*/
 /* Public objects ------------------------------------------------------------*/
-extern void     ma_api_soil_moisture_sensor_init    (uint8_t in_sensorPin); //Initialize moisture sensor
-extern uint16_t ma_api_soil_moisture_sensor_value   (void);                 //Read moisture sensor value
+extern void     ma_api_soil_moisture_sensor_init                        (uint8_t in_sensorPin); //Initialize moisture sensor
+extern uint16_t ma_api_soil_moisture_sensor_value                       (void);                 //Read moisture sensor value
+extern uint16_t ma_api_soil_moisture_sensor_average_percentage_value    (uint8_t in_timesOfAverage);//Get rain sensor average value in percantage
 
 #endif /* __MA_API_MOISTURE_SENSOR_H */
 /*****************************END OF FILE**************************************/
